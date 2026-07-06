@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ujjwalsubedi/Project-Pong/demo_predictor_fixed'
+relocations:     []
+...

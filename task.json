@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Pong",
+            "type": "shell",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "main.cpp",
+                "-std=c++17",
+                "-I/opt/homebrew/include",
+                "-L/opt/homebrew/lib",
+                "-lraylib",
+                "-framework",
+                "OpenGL",
+                "-framework",
+                "Cocoa",
+                "-framework",
+                "IOKit",
+                "-framework",
+                "CoreVideo",
+                "-o",
+                "game"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
